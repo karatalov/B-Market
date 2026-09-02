@@ -5,7 +5,7 @@ const HeaderLogo = () => {
 				B
 			</span>
 
-			<span className="text-xl font-bold text-neutral-900 sm:text-2xl">
+			<span className="text-xl font-bold text-neutral-900 sm:text-1xl">
 				B <span className="text-pink-600">Market</span>
 			</span>
 		</a>

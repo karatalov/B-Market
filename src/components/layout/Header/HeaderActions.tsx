@@ -1,4 +1,4 @@
-import HeaderLanguageSwitcher from './HeaderLanguageSwitcher'
+import HeaderLanguageSwitcher from "./HeaderLanguageSwitcher"
 
 const HeaderActions = () => {
 	return (
