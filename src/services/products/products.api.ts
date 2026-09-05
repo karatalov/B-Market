@@ -1,6 +1,6 @@
 import { api } from '../api'
 
-import type { Product, ProductsResponse } from '../../types/product.types'
+import type { ProductDetail, ProductsResponse } from '../../types/product.types'
 
 export type ProductsParams = {
 	category?: number
@@ -34,6 +34,6 @@ export const getProducts = (
 	return api<ProductsResponse>(`/products/${query ? `?${query}` : ''}`)
 }
 
-export const getProductBySlug = (slug: string): Promise<Product> => {
-	return api<Product>(`/products/${slug}/`)
+export const getProductBySlug = (slug: string): Promise<ProductDetail> => {
+	return api<ProductDetail>(`/products/${slug}/`)
 }

@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { getProducts } from '../../../services/products/products.api'
-import type { Product } from '../../../types/product.types'
 import ProductCard from '../ui/ProductCard'
+import type { ProductListItem } from '../../../types/product.types'
 
 const ProductsSection = () => {
-	const [products, setProducts] = useState<Product[]>([])
+	const [products, setProducts] = useState<ProductListItem[]>([])
 	const [loading, setLoading] = useState(true)
 	const [error, setError] = useState<string | null>(null)
 

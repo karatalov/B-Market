@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import type { Product } from '../../../types/product.types'
 import { memo } from 'react'
+import type { ProductListItem } from '../../../types/product.types'
 
 type ProductCardProps = {
-	product: Product
+	product: ProductListItem
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
